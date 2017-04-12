@@ -1,0 +1,29 @@
+<div id="map" style="width: 800px; height: 500px"></div>
+<script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+<script type="text/javascript">
+  var myMap;
+  ymaps.ready(init); // Ожидание загрузки API с сервера Яндекса
+  function init () {
+    myMap = new ymaps.Map("map", {
+      center: [48.9532, 38.4903], // Координаты центра карты
+      zoom: 14 // Zoom
+    });
+			// Создание метки 
+			var myPlacemark = new ymaps.Placemark(
+			// Координаты метки
+			[48.953208, 38.490313]        
+			);
+ 
+		// Добавление метки на карту
+		myMap.geoObjects.add(myPlacemark);
+			// Создание метки 
+			var myPlacemark = new ymaps.Placemark(
+			// Координаты метки
+			[48.944640, 38.490272],{
+			hintContent: 'Off traffic-light'       
+			});
+ 
+		// Добавление метки на карту
+		myMap.geoObjects.add(myPlacemark);
+  }
+</script>
