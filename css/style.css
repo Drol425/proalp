@@ -1,0 +1,10 @@
+.box,.page{position:fixed;top:0;left:0;display:block;width:100%;height:100%;overflow:hidden;z-index:999;background:rgba(15,102,99,0.5);color:white}.is_overlay1{display:block;width:100%;height:100%}.is_overlay1 video{position:fixed;right:0;bottom:0;min-width:100%;min-height:100%;width: auto; height: auto;z-index:-100;background:url(img/SgZBPsfCLGM.jpg) no-repeat;background-size:auto}.h1{text-align:center;color:white;font-size:42px}p{text-align:center;color:white}a{font-size:26px}@font-face{ font-family:Circe;    src:url(fonts/Circe.ttf)}body{font-family:Circe}.logo{margin-left:20px;margin-top:20px}.text{text-align: center;color:white}
+	b{
+		font-size: 18px;
+		text-align: justify;
+	}
+	 @media screen and (max-height: 500px) {
+		.text{
+			margin-top: 10%;
+		}
+    }
